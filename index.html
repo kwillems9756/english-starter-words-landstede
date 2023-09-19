@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English ICT words</title>
+    <style>
+        main.loading>div:nth-child(1) {
+            display: block;
+        }
+        main.loading>div:nth-child(2) {
+            display: none;
+        }
+        main:not(.loading)>div:nth-child(1) {
+            display: none;
+        }
+        main:not(.loading)>div:nth-child(2) {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main id="main" class="loading">
+        <h2 id="question">Some question</h2>
+        <form id="answerForm">
+            <label for="answer">Answer:</label><br><br>
+            <div id="input">
+                <select id="answer">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Check">
+        </form>
+        <br>
+        <button id="reset-score">Reset Score</button>
+        <h3>Score: <span id="score">100</span>%</h3>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
